@@ -9,9 +9,8 @@ print("===================\n")
 
 
 current_attemp = 0
-while(current_attemp < MAX_ATTEMPS):
+for current_attempt in range(0, MAX_ATTEMPS):
 	current_attemp+=1
-	# result = check_if_correct(attemp, SECRET_NUMBER)
 	result = make_attempt(SECRET_NUMBER)
 	if(result.get('match')):
 		print(result.get('message'))
