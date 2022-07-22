@@ -1,8 +1,8 @@
-from random import random
+from random import randrange
 from game import make_attempt
 
 MAX_ATTEMPS = 10
-SECRET_NUMBER = int(random() * 100)
+SECRET_NUMBER = randrange(1, 100)
 
 
 print("\n===================")
