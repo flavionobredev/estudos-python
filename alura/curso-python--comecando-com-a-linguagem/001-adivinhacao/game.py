@@ -17,7 +17,3 @@ def make_attempt(correct_number: int):
 
   isLessThan = int(attempt) < correct_number
   return {'match': False, 'message': "Quase! Você digitou um número menor." if isLessThan else "Opa! Você digitou um número maior."}
-
-  # result = check_if_correct(attempt, SECRET_NUMBER)
-  # elif(current_attempt < MAX_ATTEMPS):
-  #   print(f"Você tem mais {MAX_ATTEMPS - current_attempt} tentativas")
