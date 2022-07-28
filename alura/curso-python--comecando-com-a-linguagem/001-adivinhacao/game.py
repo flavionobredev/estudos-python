@@ -1,16 +1,10 @@
-def __check_if_correct(number: int, correct_number: int) -> bool:
-	if(number == correct_number):
-		return True
-	return False
-
-
 def make_attempt(correct_number: int):
   attempt = input("\nDigite o seu número: ")
 
   if(not attempt.isdecimal()):
     return {'match': False, 'message': "Por favor, digite um número válido."}
 
-  result = __check_if_correct(int(attempt), correct_number)
+  result = int(attempt) == correct_number
 
   if(result):
     return {'match': True, 'message': "Você acertou! O número correto é {} :)".format(attempt)}
