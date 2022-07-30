@@ -1,5 +1,5 @@
-from constants import INITIAL_POINTS, SECRET_NUMBER, MAX_ATTEMPS
 from game import make_attempt
+from constants import INITIAL_POINTS, SECRET_NUMBER, MAX_ATTEMPS
 
 
 def play():
